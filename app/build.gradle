@@ -1,0 +1,49 @@
+apply plugin: 'com.android.application'
+
+android {
+    /*signingConfigs {
+        debug {
+            storeFile file('/Users/rafael/Developer/Covid Android/plataforma-pedagogica')
+            storePassword 'J<D2y}XyrWC#2:up'
+            keyPassword 'm8h/ygS(HQ&8M~/z'
+            keyAlias 'Plataforma Pedagógica'
+        }
+    }*/
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    defaultConfig {
+        applicationId 'com.educacao.salvador.conexao'
+        minSdkVersion 22
+        targetSdkVersion 29
+        versionCode 16
+        versionName "0.16"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation project(path: ':vpnsdk-android')
+    implementation 'com.android.support:multidex:+'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+    implementation files('libs\\YouTubeAndroidPlayerApi.jar')
+}

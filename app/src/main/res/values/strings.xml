@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SMED Conectada</string>
+    <string name="title_activity_splash_screen">SMED Conectada</string>
+    <string name="SDK_API_KEY">ak-f63af357-4fc6-4997-8bdf-c36790b6431a</string>
+    <string name="SMED">Secretaria da Educação \ndo Salvador</string>
+    <string name="secretaria">Secretaria da \nEducação</string>
+    <string name="descricao">Acesse aqui as plataformas digitais que a <b>Smed</b> disponibiliza para você continuar estudando.</string>
+    <string name="escola_mais">Escola Mais</string>
+    <string name="escola_mais_descricao">Estude todos os conteúdos \nsem precisar sair de casa</string>
+    <string name="arvore">Árvore</string>
+    <string name="arvore_descricao">Maior plataforma de \nleitura digital do Brasil</string>
+    <string name="acessar">Acessar</string>
+    <string name="voltar">Voltar</string>
+</resources>

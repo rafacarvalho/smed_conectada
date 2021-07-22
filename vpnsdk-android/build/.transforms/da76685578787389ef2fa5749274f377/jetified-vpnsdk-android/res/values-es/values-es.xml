@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="smi_vpn_dialog_message">Seleccione “Aceptar” en el siguiente cuadro de diálogo para obtener datos patrocinados.</string>
+    <string name="smi_vpn_dialog_title">Permitir permisos de VPN</string>
+</resources>

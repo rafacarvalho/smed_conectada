@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="smi_vpn_dialog_message">Por favor selecione “OK” no próximo passo para ativar a Navegação Gratuita.</string>
+    <string name="smi_vpn_dialog_title">Permitir permissões para uso da VPN</string>
+    <string name="smi_vpn_reject_message">A navegação deste aplicativo será cobrada no seu plano de dados, pois você não aceitou a permissão VPN.</string>
+</resources>

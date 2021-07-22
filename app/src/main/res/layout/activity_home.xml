@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".HomeActivity">
+
+        <TextView
+            android:id="@+id/smed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/rounded_corner"
+            android:fontFamily="@font/din_bold_alternate"
+            android:paddingStart="24dp"
+            android:paddingTop="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="16dp"
+            android:text="@string/SMED"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/gotham_book"
+            android:text="@string/descricao"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/smed"
+            app:lineHeight="18dp" />
+
+        <LinearLayout
+            android:id="@+id/layout_escola_mais"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/bg_escola_mais"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <ImageView
+                android:id="@+id/escola_mais"
+                android:layout_width="120dp"
+                android:layout_height="91dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="0dp"
+                android:contentDescription="@string/escola_mais"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/escola_mais" />
+
+            <TextView
+                android:id="@+id/escola_mais_descricao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="0dp"
+                android:fontFamily="@font/gotham_book"
+                android:text="@string/escola_mais_descricao"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                app:lineHeight="24dp" />
+
+            <Button
+                android:id="@+id/acessar_escola_mais"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_gravity="end"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/rounded_button"
+                android:fontFamily="@font/din_bold_alternate"
+                android:paddingStart="32dp"
+                android:paddingTop="0dp"
+                android:paddingEnd="32dp"
+                android:paddingBottom="0dp"
+                android:text="@string/acessar"
+                android:textColor="@color/buttonTextColor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_arvore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/bg_arvore"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_escola_mais">
+
+            <ImageView
+                android:id="@+id/arvore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:contentDescription="@string/arvore_descricao"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/arvore" />
+
+            <TextView
+                android:id="@+id/arvore_descricao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:fontFamily="@font/gotham_book"
+                android:text="@string/arvore_descricao"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                app:lineHeight="20sp" />
+
+            <Button
+                android:id="@+id/acessar_arvore"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_gravity="end"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/rounded_button"
+                android:fontFamily="@font/din_bold_alternate"
+                android:paddingStart="32dp"
+                android:paddingTop="0dp"
+                android:paddingEnd="32dp"
+                android:paddingBottom="0dp"
+                android:text="@string/acessar"
+                android:textColor="@color/buttonTextColor" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="smi_vpn_dialog_message">Seleccione “Aceptar” en el siguiente cuadro de diálogo para obtener datos patrocinados.</string>
+    <string name="smi_vpn_dialog_title">Permitir permisos de VPN</string>
+    <string name="smi_vpn_reject_message">La navegación de esta aplicación se cargará a su plan de datos ya que no ha aceptado el permiso de VPN.</string>
+</resources>
